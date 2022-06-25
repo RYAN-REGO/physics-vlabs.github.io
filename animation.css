@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+body{
+    display: flex;
+    background-color: black;
+    /* align-items: center; */
+    justify-content: center;
+    min-height: 200vh;
+}
+.heading{
+    color: rgb(221, 213, 213);
+    color: goldenrod;
+    text-shadow: 0 0 3px orange;
+    font-size: 50px;
+    position: absolute;
+    top: 16px;
+    animation: toggle 1s infinite;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: 600;
+
+}
+@keyframes infinite{
+    0%{color: goldenrod;
+        font-size: 50px;
+    }
+    25%{
+        color: rgb(182, 181, 181);
+        font-size: 45px;
+    }
+    50%{color: goldenrod;
+        font-size: 50px;
+    }
+    75%{color: rgb(182, 181, 181);
+        font-size: 45px;
+    }
+    100%{color: goldenrod;
+        font-size: 50px;
+    }
+}
+.section1{
+    
+    display: flex;
+    height: 100vh;
+}
+.section1 .container{
+    display: flex;
+    height: 263px;
+    position: absolute;
+    width: 903px;
+    background-color: rgb(36, 35, 35);
+    top: 151px;
+    align-items: center;
+    left: 17%;
+    border-radius: 7px;
+}
+.section1 .box1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    position: absolute;
+    width: 90px;
+    border-radius: 50%;
+    /* background-color: greenyellow; */
+    background-image: linear-gradient(to right, violet,blue);
+    left: 127px;
+    font-size: 25px;
+    animation: collide 6s linear infinite;
+}
+.section1 .box2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    position: absolute;
+    width: 90px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, violet,blue);
+    right: 127px;
+    font-size: 25px;
+    animation: collideslash 6s linear infinite;
+}
+@keyframes collide{
+    0%{
+        transform: translateX(0px);
+    }
+    10%{
+        transform: translateX(60px);
+    }
+    25%{transform: translateX(120px);}
+    50%{transform: translateX(235px);}
+    70%{transform: translateX(150px);}
+    85%{
+        transform: translateX(80px);
+    }
+    100%{transform: translateX(0px);}
+}
+@keyframes collideslash{
+    0%{
+        transform: translateX(0px);
+    }
+    10%{
+        transform: translateX(-60px);
+    }
+    25%{transform: translateX(-120px);}
+    50%{transform: translateX(-235px);}
+    70%{transform: translateX(-150px);}
+    85%{
+        transform: translateX(-80px);
+    }
+    100%{transform: translateX(-0px);}
+}
+.content1{
+    display: flex;
+    position: absolute;
+    font-size: 42px;
+    color: red;
+    top: 7px;
+    left: 305px;
+}
+.content2{
+    position: absolute;
+    bottom: 1px;
+    left: 42%;
+    font-size: 18px;
+    color: aqua;
+}
+.content2 span{
+    font-size: 25px;
+}
+.section1::before{
+    content: '1.';
+    color: rgb(214, 214, 25);
+    font-size: 63px;
+    position: absolute;
+    left: 186px;
+    top: 110px;
+
+}
+.section1::after{
+    content: '';
+    height: 1px;
+    width: 1050px;
+    display: flex;
+    background: rgb(71, 70, 70);
+    position: absolute;
+    left: 140px;
+    top: 105vh;
+}
+
+
+.section2{
+    display: flex;
+    height: 500px;
+    background-color: #282828;
+}
+
+.section2 .container1{
+    display: flex;
+    height: 263px;
+    position: absolute;
+    width: 903px;
+    background-color: rgb(36, 35, 35);
+    top: 780px;
+    align-items: center;
+    left: 17%;
+    border-radius: 7px;
+    /* rgb(36, 35, 35) */
+}
+::-webkit-scrollbar{
+    color: #282828;
+    /* background-color: grey; */
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(80, 78, 78);
+    border-radius: 5px;
+    width: 5px;
+}
+
+.content3{
+    display: flex;
+    position: absolute;
+    font-size: 42px;
+    color: red;
+    top: 7px;
+    left: 305px;
+}
+.content4{
+    position: absolute;
+    bottom: 1px;
+    left: 40%;
+    font-size: 20px;
+    color: aqua;
+}
+
+.section2 .box3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    position: absolute;
+    width: 90px;
+    border-radius: 50%;
+    /* background-color: greenyellow; */
+    background-image: linear-gradient(to right, violet,blue);
+    left: 127px;
+    font-size: 25px;
+    animation: collide3 6s linear infinite;
+}
+.section2 .box4{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    position: absolute;
+    width: 110px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, violet,blue);
+    right: 127px;
+    font-size: 25px;
+    animation: collideslash4 6s linear infinite;
+}
+@keyframes collide3{
+    0%{
+        transform: translateX(0px);
+    }
+    10%{
+        transform: translateX(60px);
+    }
+    25%{transform: translateX(120px);}
+    50%{transform: translateX(235px);}
+    70%{transform: translateX(150px);}
+    85%{
+        transform: translateX(80px);
+    }
+    100%{transform: translateX(0px);}
+}
+@keyframes collideslash4{
+    0%{
+        transform: translateX(0px);
+    }
+    10%{
+        transform: translateX(-60px);
+    }
+    25%{transform: translateX(-120px);}
+    50%{transform: translateX(-235px);}
+    70%{transform: translateX(-300px);}
+    85%{
+        transform: translateX(-368px);
+    }
+    100%{transform: translateX(-460px);}
+}
+.section2::before{
+    content: '2.';
+    color: rgb(214, 214, 25);
+    font-size: 63px;
+    position: absolute;
+    left: 180px;
+    top: 732px;
+
+}
+.head{
+    font-size: 29px;
+    color: white;
+    position: absolute;
+    top: 440px;
+    left: 228px;
+    font-weight: 600;
+}
+.section1 .props{
+    font-size: 20px;
+    color: rgb(197, 193, 193);
+    position: absolute;
+    top: 480px;
+    left: 350px;
+    font-style: italic;
+}
+.head1{
+    font-size: 29px;
+    color: white;
+    position: absolute;
+    top: 1070px;
+    left: 228px;
+    font-weight: 600;
+}
+.section2 .props1{
+    font-size: 20px;
+    color: rgb(197, 193, 193);
+    position: absolute;
+    top: 1120px;
+    left: 350px;
+}
